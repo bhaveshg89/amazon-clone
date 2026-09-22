@@ -14,3 +14,14 @@ searchInput.addEventListener("input", function () {
         }
     });
 });
+
+
+//back to top button
+const backToTop = document.querySelector(".foot-panel1");
+
+backToTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

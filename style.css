@@ -370,3 +370,8 @@ background-image: url("amazon_logo.png");
     }
 
 }
+
+/*back to top button*/
+.foot-panel1 {
+    cursor: pointer;
+}
