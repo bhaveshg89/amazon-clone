@@ -375,3 +375,14 @@ background-image: url("amazon_logo.png");
 .foot-panel1 {
     cursor: pointer;
 }
+
+
+
+
+/*add to card button*/
+.add-cart-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
