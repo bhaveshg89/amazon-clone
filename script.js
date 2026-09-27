@@ -25,3 +25,4 @@ backToTop.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
