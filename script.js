@@ -26,3 +26,15 @@ backToTop.addEventListener("click", function () {
     });
 });
 
+//button clickable
+// Cart Count
+let cartCount = 0;
+
+const cartButtons = document.querySelectorAll(".add-cart-btn");
+
+cartButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        cartCount++;
+        document.getElementById("cartCount").innerText = cartCount;
+    });
+});
