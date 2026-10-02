@@ -38,3 +38,4 @@ cartButtons.forEach(function(button) {
         document.getElementById("cartCount").innerText = cartCount;
     });
 });
+
