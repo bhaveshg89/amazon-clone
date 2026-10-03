@@ -387,3 +387,16 @@ background-image: url("amazon_logo.png");
     margin-top: 5px;
 }
 
+
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}

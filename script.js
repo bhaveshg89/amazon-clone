@@ -36,6 +36,8 @@ cartButtons.forEach(function(button) {
     button.addEventListener("click", function() {
         cartCount++;
         document.getElementById("cartCount").innerText = cartCount;
+        document.getElementById("cartPopup").style.display = "block";
+document.getElementById("popupCartCount").innerText = cartCount;
     });
 });
 
