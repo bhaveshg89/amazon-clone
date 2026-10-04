@@ -400,3 +400,36 @@ background-image: url("amazon_logo.png");
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     z-index: 1000;
 }
+
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-content h2 {
+    min-height: 48px;
+}
+
+.add-cart-btn {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 8px 15px;
+}
+
+.box {
+    height: 450px;
+}
+
+.add-cart-btn {
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .box {
+        height: 350px;
+    }
+}
+
