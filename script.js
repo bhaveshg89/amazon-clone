@@ -29,6 +29,7 @@ backToTop.addEventListener("click", function () {
 //button clickable
 // Cart Count
 let cartCount = 0;
+let cartTotal = 0;
 
 const cartButtons = document.querySelectorAll(".add-cart-btn");
 
@@ -36,10 +37,14 @@ cartButtons.forEach(function(button) {
     button.addEventListener("click", function() {
         cartCount++;
         document.getElementById("cartCount").innerText = cartCount;
+        cartTotal += 500;
+document.getElementById("cartTotal").innerText = cartTotal;
         document.getElementById("cartPopup").style.display = "block";
 document.getElementById("popupCartCount").innerText = cartCount;
     });
 });
+
+
 
 
 
