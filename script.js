@@ -37,7 +37,8 @@ cartButtons.forEach(function(button) {
     button.addEventListener("click", function() {
         cartCount++;
         document.getElementById("cartCount").innerText = cartCount;
-        cartTotal += 500;
+        const price = Number(button.dataset.price);
+cartTotal += price;
 document.getElementById("cartTotal").innerText = cartTotal;
         document.getElementById("cartPopup").style.display = "block";
 document.getElementById("popupCartCount").innerText = cartCount;
