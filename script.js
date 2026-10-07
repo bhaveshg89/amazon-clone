@@ -30,6 +30,7 @@ backToTop.addEventListener("click", function () {
 // Cart Count
 let cartCount = 0;
 let cartTotal = 0;
+let cartPrices = [];
 
 const cartButtons = document.querySelectorAll(".add-cart-btn");
 
@@ -39,6 +40,7 @@ cartButtons.forEach(function(button) {
         document.getElementById("cartCount").innerText = cartCount;
         const price = Number(button.dataset.price);
 cartTotal += price;
+cartPrices.push(price);
 document.getElementById("cartTotal").innerText = cartTotal;
         document.getElementById("cartPopup").style.display = "block";
 document.getElementById("popupCartCount").innerText = cartCount;
@@ -47,5 +49,19 @@ document.getElementById("popupCartCount").innerText = cartCount;
 
 
 
+function removeLastItem() {
+
+    if (cartCount > 0) {
+
+        const removedPrice = cartPrices.pop();
+
+        cartCount--;
+        cartTotal = cartTotal - removedPrice;
+
+        document.getElementById("cartCount").innerText = cartCount;
+        document.getElementById("popupCartCount").innerText = cartCount;
+        document.getElementById("cartTotal").innerText = cartTotal;
+    }
+}
 
 
