@@ -65,3 +65,15 @@ function removeLastItem() {
 }
 
 
+function clearCart() {
+    cartCount = 0;
+    cartTotal = 0;
+    cartPrices = [];
+
+    document.getElementById("cartCount").innerText = cartCount;
+    document.getElementById("popupCartCount").innerText = cartCount;
+    document.getElementById("cartTotal").innerText = cartTotal;
+}
+
+
+
