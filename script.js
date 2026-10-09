@@ -75,5 +75,9 @@ function clearCart() {
     document.getElementById("cartTotal").innerText = cartTotal;
 }
 
+function closeCart() {
+    document.getElementById("cartPopup").style.display = "none";
+}
+
 
 
