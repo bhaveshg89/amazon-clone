@@ -32,6 +32,7 @@ let cartCount = 0;
 let cartTotal = 0;
 let cartPrices = [];
 
+
 const cartButtons = document.querySelectorAll(".add-cart-btn");
 
 cartButtons.forEach(function(button) {
@@ -41,6 +42,7 @@ cartButtons.forEach(function(button) {
         const price = Number(button.dataset.price);
 cartTotal += price;
 cartPrices.push(price);
+saveCart();
 document.getElementById("cartTotal").innerText = cartTotal;
         document.getElementById("cartPopup").style.display = "block";
 document.getElementById("popupCartCount").innerText = cartCount;
@@ -57,6 +59,7 @@ function removeLastItem() {
 
         cartCount--;
         cartTotal = cartTotal - removedPrice;
+        saveCart();
 
         document.getElementById("cartCount").innerText = cartCount;
         document.getElementById("popupCartCount").innerText = cartCount;
@@ -69,6 +72,7 @@ function clearCart() {
     cartCount = 0;
     cartTotal = 0;
     cartPrices = [];
+    saveCart();
 
     document.getElementById("cartCount").innerText = cartCount;
     document.getElementById("popupCartCount").innerText = cartCount;
@@ -78,6 +82,32 @@ function clearCart() {
 function closeCart() {
     document.getElementById("cartPopup").style.display = "none";
 }
+
+
+function saveCart() {
+    localStorage.setItem("cartCount", cartCount);
+    localStorage.setItem("cartTotal", cartTotal);
+    localStorage.setItem("cartPrices", JSON.stringify(cartPrices));
+}
+
+
+window.addEventListener("load", function () {
+    cartCount = Number(localStorage.getItem("cartCount")) || 0;
+    cartTotal = Number(localStorage.getItem("cartTotal")) || 0;
+    cartPrices = JSON.parse(localStorage.getItem("cartPrices")) || [];
+
+    document.getElementById("cartCount").innerText = cartCount;
+    document.getElementById("popupCartCount").innerText = cartCount;
+    document.getElementById("cartTotal").innerText = cartTotal;
+});
+
+
+
+function openCart() {
+    document.getElementById("cartPopup").style.display = "block";
+}
+
+
 
 
 
