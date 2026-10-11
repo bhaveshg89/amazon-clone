@@ -31,6 +31,7 @@ backToTop.addEventListener("click", function () {
 let cartCount = 0;
 let cartTotal = 0;
 let cartPrices = [];
+let cartNames = [];
 
 
 const cartButtons = document.querySelectorAll(".add-cart-btn");
@@ -42,6 +43,9 @@ cartButtons.forEach(function(button) {
         const price = Number(button.dataset.price);
 cartTotal += price;
 cartPrices.push(price);
+const productName = button.closest(".box").querySelector("h2").innerText;
+cartNames.push(productName);
+displayCartItems();
 saveCart();
 document.getElementById("cartTotal").innerText = cartTotal;
         document.getElementById("cartPopup").style.display = "block";
@@ -52,6 +56,11 @@ document.getElementById("popupCartCount").innerText = cartCount;
 
 
 function removeLastItem() {
+    const removedPrice = cartPrices.pop();
+    
+cartNames.pop();
+displayCartItems();
+
 
     if (cartCount > 0) {
 
@@ -72,6 +81,10 @@ function clearCart() {
     cartCount = 0;
     cartTotal = 0;
     cartPrices = [];
+    
+cartNames = [];
+displayCartItems();
+
     saveCart();
 
     document.getElementById("cartCount").innerText = cartCount;
@@ -88,10 +101,12 @@ function saveCart() {
     localStorage.setItem("cartCount", cartCount);
     localStorage.setItem("cartTotal", cartTotal);
     localStorage.setItem("cartPrices", JSON.stringify(cartPrices));
+    localStorage.setItem("cartNames", JSON.stringify(cartNames));
 }
 
 
 window.addEventListener("load", function () {
+    cartNames = JSON.parse(localStorage.getItem("cartNames")) || [];
     cartCount = Number(localStorage.getItem("cartCount")) || 0;
     cartTotal = Number(localStorage.getItem("cartTotal")) || 0;
     cartPrices = JSON.parse(localStorage.getItem("cartPrices")) || [];
@@ -106,6 +121,33 @@ window.addEventListener("load", function () {
 function openCart() {
     document.getElementById("cartPopup").style.display = "block";
 }
+
+
+function checkout() {
+    if (cartCount === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    alert("Order placed successfully! Total: ₹" + cartTotal);
+
+    clearCart();
+    closeCart();
+}
+
+
+function displayCartItems() {
+    const cartItemsList = document.getElementById("cartItemsList");
+
+    cartItemsList.innerHTML = "";
+
+    cartNames.forEach(function(name, index) {
+        const li = document.createElement("li");
+        li.innerText = (index + 1) + ". " + name;
+        cartItemsList.appendChild(li);
+    });
+}
+
 
 
 
