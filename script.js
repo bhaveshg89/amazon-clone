@@ -150,6 +150,40 @@ function displayCartItems() {
 
 
 
+function openLogin() {
+    document.getElementById("loginPopup").style.display = "block";
+}
+
+function closeLogin() {
+    document.getElementById("loginPopup").style.display = "none";
+}
+
+
+
+function loginUser() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value;
+
+    if (email === "" || password === "") {
+        alert("Please enter email/mobile and password!");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters!");
+        return;
+    }
+
+    alert("Demo login successful!");
+    closeLogin();
+}
+
+
+
+
+
+
+
 
 
 

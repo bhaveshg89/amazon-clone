@@ -435,5 +435,63 @@ background-image: url("amazon_logo.png");
 
 
 
+/* Login Popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.login-popup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0f1111;
+}
+
+.login-popup label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+.login-popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-popup button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-popup button:first-of-type {
+    background-color: #ffd814;
+}
+
+.login-popup button:last-of-type {
+    background-color: #e7e9ec;
+}
+
+
+
+
+
 
 
