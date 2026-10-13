@@ -492,6 +492,29 @@ background-image: url("amazon_logo.png");
 
 
 
+/* Password Field */
+.password-field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.password-field input {
+    flex: 1;
+    min-width: 0;
+}
+
+.password-field button {
+    width: auto;
+    margin-top: 0;
+    padding: 10px;
+    background-color: #e7e9ec;
+    border: 1px solid #888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 
 
 

@@ -181,6 +181,19 @@ function loginUser() {
 
 
 
+function togglePassword() {
+    const passwordInput = document.getElementById("loginPassword");
+    const toggleButton = document.querySelector(".password-field button");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleButton.innerText = "Hide";
+    } else {
+        passwordInput.type = "password";
+        toggleButton.innerText = "Show";
+    }
+}
+
 
 
 
