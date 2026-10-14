@@ -516,5 +516,32 @@ background-image: url("amazon_logo.png");
 
 
 
+/* Responsive Login Popup */
+@media (max-width: 480px) {
+    .login-popup {
+        width: calc(100% - 40px);
+        max-width: 320px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .login-popup h2 {
+        font-size: 22px;
+    }
+
+    .password-field {
+        gap: 5px;
+    }
+
+    .password-field button {
+        padding: 10px 8px;
+    }
+}
+
+
+
+
+
+
 
 
