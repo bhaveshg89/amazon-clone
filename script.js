@@ -150,13 +150,17 @@ function displayCartItems() {
 
 
 
+
 function openLogin() {
+    document.getElementById("loginOverlay").style.display = "block";
     document.getElementById("loginPopup").style.display = "block";
 }
 
 function closeLogin() {
+    document.getElementById("loginOverlay").style.display = "none";
     document.getElementById("loginPopup").style.display = "none";
 }
+
 
 
 
