@@ -234,7 +234,9 @@ All
     <label for="loginPassword">Password</label>
     <
 <div class="password-field">
-    <input type="password" id="loginPassword" placeholder="Enter password">
+    
+<input type="password" id="loginPassword" placeholder="Enter password" onkeydown="if (event.key === 'Enter') loginUser()">
+
     <button type="button" onclick="togglePassword()">Show</button>
 </div>
 
