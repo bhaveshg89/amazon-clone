@@ -553,6 +553,56 @@ background-image: url("amazon_logo.png");
 }
 
 
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+
+/* Mobile Responsive Product Cards */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+        box-sizing: border-box;
+        margin: 10px;
+    }
+}
+
+
+/* Responsive Product Images */
+@media (max-width: 768px) {
+    .box img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+
+/* Prevent Horizontal Overflow on Mobile */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
