@@ -596,6 +596,63 @@ background-image: url("amazon_logo.png");
 
 
 
+/* Mobile Product Card Text */
+@media (max-width: 768px) {
+    .box h2 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .box p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+/* Mobile Product Buttons */
+@media (max-width: 768px) {
+    .box button {
+        max-width: 100%;
+        padding: 10px 8px;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Mobile Cart Popup */
+@media (max-width: 768px) {
+    #cartPopup {
+        width: calc(100% - 30px);
+        max-width: 400px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Mobile Login Popup */
+@media (max-width: 768px) {
+    .login-popup {
+        width: calc(100% - 40px);
+        max-width: 360px;
+        max-height: 85vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .login-popup input {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
 
 
 
