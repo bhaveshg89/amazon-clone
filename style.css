@@ -650,6 +650,44 @@ background-image: url("amazon_logo.png");
 }
 
 
+/* Mobile Search Bar */
+@media (max-width: 768px) {
+    #searchInput {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Mobile Search Container */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Mobile Search Input */
+@media (max-width: 768px) {
+    #searchInput {
+        min-width: 0;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #searchInput::placeholder {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
 
 
 
