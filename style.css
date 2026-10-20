@@ -684,6 +684,145 @@ background-image: url("amazon_logo.png");
 }
 
 
+/* Mobile Navbar Text */
+@media (max-width: 768px) {
+    .nav-second {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-second a {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Product Card Spacing */
+@media (max-width: 768px) {
+    .box {
+        padding: 15px;
+        margin: 8px;
+        box-sizing: border-box;
+    }
+
+    .box button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* Mobile Navbar Spacing */
+@media (max-width: 768px) {
+    .nav-second {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-second a {
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+
+/* Mobile Footer Responsive */
+@media (max-width: 768px) {
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .foot-panel2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .foot-panel2 ul {
+        margin: 0;
+        padding: 10px;
+        max-width: 45%;
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile Footer Text */
+@media (max-width: 768px) {
+    .foot-panel2 ul h3 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .foot-panel2 ul a {
+        font-size: 12px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .foot-panel3 img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .foot-panel4 {
+        padding: 15px 10px;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+/* Mobile Cart Popup Fix */
+@media (max-width: 768px) {
+    #cartPopup {
+        width: calc(100% - 30px);
+        max-width: 400px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    #cartPopup button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Mobile Login Popup Fix */
+@media (max-width: 480px) {
+    .login-popup {
+        width: calc(100% - 30px);
+        max-width: 360px;
+        max-height: 85vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .login-popup input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .password-field {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .password-field input {
+        min-width: 0;
+        flex: 1;
+    }
+}
+
+
+
+
 
 
 
