@@ -929,6 +929,24 @@ html {
 }
 
 
+.add-cart-btn {
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.add-cart-btn:hover {
+    background-color: #f7ca00;
+    transform: translateY(-2px);
+}
+
+.add-cart-btn:active {
+    transform: scale(0.98);
+}
+
+
+
+
 
 
 
