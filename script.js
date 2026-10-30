@@ -164,43 +164,6 @@ function closeLogin() {
 
 
 
-function loginUser() {
-    const email = document.getElementById("loginEmail").value.trim();
-    const password = document.getElementById("loginPassword").value;
-
-    if (email === "" || password === "") {
-        alert("Please enter email/mobile and password!");
-        return;
-    }
-
-    if (password.length < 6) {
-        alert("Password must be at least 6 characters!");
-        return;
-    }
-
-    alert("Demo login successful!");
-    closeLogin();
-}
-
-
-
-
-function togglePassword() {
-    const passwordInput = document.getElementById("loginPassword");
-    const toggleButton = document.querySelector(".password-field button");
-
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        toggleButton.innerText = "Hide";
-    } else {
-        passwordInput.type = "password";
-        toggleButton.innerText = "Show";
-    }
-}
-
-
-
-
 
 
 
