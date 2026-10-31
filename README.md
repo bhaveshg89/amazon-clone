@@ -1,18 +1,21 @@
 
-# Amazon Clone 🛒
+# ShopNest 🛍️
 
-A responsive Amazon-inspired e-commerce frontend built using HTML, CSS, and JavaScript.
+A responsive student shopping website demo built using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 
-- Responsive navigation bar
-- Product cards and search functionality
-- Add to Cart and cart item counter
+- Responsive navigation bar for desktop and mobile
+- Product categories and product cards
+- Product search functionality
+- Add to Cart functionality
+- Cart item counter
 - Cart total calculation
-- Remove last item and clear cart
+- Remove individual cart items
+- Clear cart functionality
 - Cart data persistence using LocalStorage
-- Login popup with password show/hide
-- Responsive layout for mobile and desktop
+- Demo checkout message
+- Responsive layout for different screen sizes
 
 ## 🛠️ Technologies Used
 
@@ -20,6 +23,7 @@ A responsive Amazon-inspired e-commerce frontend built using HTML, CSS, and Java
 - CSS3
 - JavaScript
 - Font Awesome
+- LocalStorage
 
 ## 📂 Project Structure
 
@@ -29,24 +33,41 @@ amazon-clone/
 ├── style.css
 ├── script.js
 ├── README.md
-└── images/
+├── hero_image.jpg
+├── box1_image.jpg
+├── box2_image.jpg
+├── box3_image.jpg
+├── box4_image.jpg
+├── box5_image.jpg
+├── box6_image.jpg
+├── box7_image.jpg
+└── box8_image.jpg
 ```
-
-*Note: The image folder structure may differ depending on your project files.*
 
 ## ▶️ How to Run
 
 1. Download or clone this repository.
-2. Open the project folder.
+2. Open the project folder in VS Code.
 3. Open `index.html` in your browser.
+4. You can also use the Live Server extension.
 
-## ⚠️ Note
+## ⚠️ Important Note
 
-This is a frontend demonstration project. Login and checkout are not connected to a real authentication system or payment gateway.
+This is a student frontend demonstration project for educational purposes only.
+
+- No real orders are placed.
+- No real payments are processed.
+- No personal or account information should be entered.
 
 ## 👨‍💻 Author
 
-Bhavesh Gurjar
+**Bhavesh Gurjar**
+
+
+
+
+
+
 
 
 
